@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All-in-One CSS Demo</title>
+  <style>
+    /* 1. Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* 2. Typography */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 16px;
+      color: #333;
+      background-color: #f4f4f4;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+
+    /* 3. Classes and IDs */
+    .box {
+      background: white;
+      padding: 20px;
+      border: 2px solid #ccc;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    #highlight {
+      background-color: lightyellow;
+      font-weight: bold;
+    }
+
+    /* 4. Colors and Units */
+    .color-sample {
+      color: #e91e63;
+      background: rgba(233, 30, 99, 0.1);
+      padding: 10px;
+    }
+
+    /* 5. Box Model */
+    .box-model {
+      width: 200px;
+      padding: 15px;
+      border: 5px solid blue;
+      margin: 20px auto;
+      background-color: #e3f2fd;
+    }
+
+    /* 6. Positioning */
+    .relative-box {
+      position: relative;
+      left: 20px;
+      top: 10px;
+      background-color: #c8e6c9;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #ffcdd2;
+      padding: 10px;
+    }
+
+    .position-container {
+      position: relative;
+      height: 120px;
+    }
+
+    /* 7. Display & Visibility */
+    .hidden {
+      display: none;
+    }
+
+    /* 8. Flexbox */
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: #fbe9e7;
+      padding: 10px;
+    }
+
+    .flex-item {
+      background: #ff8a65;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    /* 9. Grid */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .grid-item {
+      background-color: #c5cae9;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* 10. Pseudo-classes */
+    a {
+      color: #1976d2;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #d32f2f;
+      text-decoration: underline;
+    }
+
+    /* 11. Media Query */
+    @media (max-width: 768px) {
+      .flex-container {
+        flex-direction: column;
+      }
+
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* 12. Transitions */
+    .transition-box {
+      background-color: #fff176;
+      transition: background-color 0.3s ease;
+      padding: 10px;
+    }
+
+    .transition-box:hover {
+      background-color: #ffee58;
+    }
+
+    /* 13. Animation */
+    @keyframes slideRight {
+      from { transform: translateX(0); }
+      to { transform: translateX(100px); }
+    }
+
+    .animated-box {
+      animation: slideRight 2s infinite alternate;
+      background-color: #80deea;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    /* 14. Z-index */
+    .z1 {
+      z-index: 1;
+      position: relative;
+    }
+
+    .z2 {
+      z-index: 2;
+      position: relative;
+      background: #ffcc80;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>All-in-One CSS Demo</h1>
+
+  <div class="box" id="highlight">
+    <h2>CSS Basics: Classes, IDs, Colors, Fonts</h2>
+    <p>This is a highlighted <span class="color-sample">colored</span> box with styled text.</p>
+  </div>
+
+  <div class="box box-model">
+    <h3>Box Model</h3>
+    <p>This box demonstrates padding, margin, and border.</p>
+  </div>
+
+  <div class="box position-container">
+    <div class="absolute-box">Absolute</div>
+    <div class="relative-box">Relative</div>
+  </div>
+
+  <div class="box flex-container">
+    <div class="flex-item">Flex 1</div>
+    <div class="flex-item">Flex 2</div>
+    <div class="flex-item">Flex 3</div>
+  </div>
+
+  <div class="box grid-container">
+    <div class="grid-item">Grid 1</div>
+    <div class="grid-item">Grid 2</div>
+    <div class="grid-item">Grid 3</div>
+  </div>
+
+  <div class="box">
+    <h3>Pseudo-classes</h3>
+    <p><a href="#">Hover over this link</a> to see styling in action.</p>
+  </div>
+
+  <div class="box transition-box">
+    <p>Hover over this box to see the transition effect.</p>
+  </div>
+
+  <div class="box animated-box">
+    <p>This box is animated using keyframes.</p>
+  </div>
+
+  <div class="box z1">
+    <p>This has a lower z-index.</p>
+  </div>
+  <div class="box z2">
+    <p>This has a higher z-index and overlaps the other box.</p>
+  </div>
+
+</body>
+</html>
