@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale = 1.0">
+    <title>web app</title>
+    <style>
+        body {
+    background-color: smokewhite;
+    color: black;
+    font-family: sans-serif;
+     margin: 0 auto;
+    text-align:center;
+    align-content:center;
+}
+h1{
+   animation: mymove 1s ease-in;
+  animation-name: mymove;
+  animation-iteration-count: infinite;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    text-align: center; 
+    margin-left: 23px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+    nav a{
+        color: black;
+    }
+    nav{
+        width: 20px 20px ;
+        height: 0 auto;
+        border: 4px solid black;
+        border-radius: 2vh;
+        background-color: cyan;
+        box-shadow: 10px 10px 10px whitesmoke;
+        backdrop-filter: blur(10px);
+        margin-top: 20px;
+        text-align:center;
+    }
+.image-gallery{
+    width: 300px;
+    margin: 25px 25px auto;
+    padding: 25px;
+    box-shadow: 8px 8px 8px black;
+    text-align: center;
+    align-content:center;
+    
+}
+image{
+    width: 100%;
+    padding:  auto;
+    margin: 20px;
+    
+} 
+  
+@keyframes mymove{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(100px);
+    }
+}
+fieldset{
+    margin-top: 40px;
+    padding:auto;
+    background-image: url("image/fried-liver-waffles-with-onions-and-herbs-video.jpg")    
+}
+    fieldset input{
+        margin:10px;
+        padding: 10px 10px;
+        border: 2px solid black;
+        border-radius: 10vh;
+        outline: none;
+        margin-left: 20%;
+    }
+   input[type="submit"]{
+        margin-top: 10px;
+       padding:10px 80px;
+    }
+    video{
+     margin: 35px;   
+    }
+    footer{
+        text-align: center;
+        font-size: 15px;
+    }
+    </style>
+</head>
+<body>
+    <!----------------------heading------------------------>
+    <header>
+        <h1>WELCOME TO HAROONIU RESTAURENT</h1>
+        <h3></h3>
+        <img src="image/pexels-passengerslover-32180330.jpg" width="0p">
+    </header>
+    <section>
+        <!---------------------navigation bar---------------------->
+    <nav>
+        <ul>
+      <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html" id="ABOUT">ABOUT</a></li>
+        <li><a href="contact.html"id="CONTACT">CONTACT</a></li>
+        <li><a href="news.html" id="news">NEWS</a></li>
+        </ul>
+    </nav>
+        <!------------vedio--------->
+        <section class="video">
+            <video src="video/700_F_1219976437_ddyWjxuCPcYs2GgO9kvt5kcwr8DKJRoB_ST.mp4"type="video/mp4" controls></video>
+        </section>
+        <!-----------------my image--------------------->
+            <div class="image-gallery">
+<img src="image/pexels-elementsinteractive-32177657.jpg" alt="image" width="300px" height="180px">
+<figcaption>delicious<em>bugger</em> <strong>#200</strong></figcaption>
+                </div>
+            <div class="image-gallery">
+        <img src="image/pexels-asphotograpy-96620.jpg" alt="image" width="300px">
+        <figcaption>orange <em>JUICE</em> <strong>#3000</strong></figcaption>
+                </div>
+            <div class="image-gallery">
+        <img src="image/pexels-pixabay-357577.jpg" alt="image" width="300px">
+        <figcaption>
+            lemon <em>JUICE</em><strong>#3500</strong>
+        </figcaption>
+                </div>
+            <div class="image-gallery">
+        <img src="image/pexels-solodsha-8105107.jpg" alt="image" width="300px" height="180px">
+        <figcaption>
+            ice <em>COFFEE</em><strong>#3200</strong>
+        </figcaption>
+                </div>
+            <div class="image-gallery">
+        <img src="image/pexels-saizstudio-17952748.jpg" alt="image" width="300px" controls muted>
+        <figcaption>pride <em>RICE</em> <strong>#5000</strong></figcaption>
+                </div>
+            <div class="image-gallery">
+        <img src="image/fried-liver-waffles-with-onions-and-herbs-video.jpg" alt="image" width="300px" height="300px">
+        <figcaption>chinese<em>food</em> <strong>#5000</strong></figcaption>
+                </div>
+            <div class="image-gallery">
+        <img src="image/a-close-up-of-a-dish-of-meat-and-green-beans-free-video.jpg" alt="image" width="300px">
+        <figcaption>paper<em>soup</em> <strong>#5000</strong></figcaption>
+                </div>
+            <div class="image-gallery">
+        <img src="image/pexels-gopinath-mohanta-620775064-32149542.jpg" alt="image" width="300px" height="180px">
+        <figcaption>chiken<em>meat</em> <strong>#5000</strong></figcaption>
+        </div>
+        <div class="image-gallery">
+
+                <img src="image/pexels-theiykeibeh-28160385.jpg"alt="img" width="300px" height="300px">
+                <figcaption>delicius<em>samosa</em> <strong>#9000</strong></figcaption>
+        </div>
+            <div class="image-gallery">
+
+                <img src="image/pexels-melaudelo-32178893.jpg" alt="img" width="300px" height="300px">
+                <figcaption>gass<em>meat</em> <strong>#9000</strong></figcaption>
+            </div>
+            <div class="image-gallery">
+
+                <img src="image/pexels-kevin-dedicatoria-329099931-32196851.jpg" alt="img" width="300px" height="300px">
+                <figcaption>111<em>rice</em> <strong>#9000</strong></figcaption>
+            </div>
+            <div class="image-gallery">
+
+                <img src="image/pexels-helen-brudna-2151730422-32188550.jpg" alt="img" width="300px" height="300px">
+                <figcaption>delicius<em>egg</em> <strong>#9000</strong></figcaption>
+            </div>
+                </div>
+            <!------------------my form------------------->
+     <fieldset>
+         <legend>have an account an place your order here!</legend>
+             <form id="login" onsubmit="return validateForm()" novalidate>
+                 <input type="email" id="email"  placeholder="email/phone" required>
+                 <input type="password" id="password" placeholder="password" max-length ="6" required>
+         <input type="submit">
+         </form>
+     </fieldset>
+                <!-----------footer------------>
+    <footer>
+        &copy  HARSAD RESTUARENT 2025
+    </footer>
+    <script>
+        function validateForm(value){
+        const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            if(email ==="" ||password ===""){
+                alert("please fill all the requre input");
+                return false;
+            }
+        }
+ 
+    </script>
+</body>
+</html>
