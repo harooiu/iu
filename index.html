@@ -34,15 +34,16 @@ nav li{
         color: black;
     }
     nav{
-        width: 20px 20px ;
-        height: 0 auto;
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
         border: 4px solid black;
         border-radius: 2vh;
         background-color: cyan;
         box-shadow: 10px 10px 10px whitesmoke;
         backdrop-filter: blur(10px);
         margin-top: 40px;
-        text-align:center;
     }
 .image-gallery{
     display: flex;
@@ -67,13 +68,17 @@ image{
     }
 }
 fieldset{
-    margin-top: 40px;
-    padding:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     background-image: url("fried-liver-waffles-with-onions-and-herbs-video.jpg");    
 }
     fieldset input{
-        margin:10px;
-        padding: 10px 10px;
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
         border: 2px solid black;
         border-radius: 10vh;
         outline: none;
