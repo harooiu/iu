@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>haroon</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background:#f0f8ff;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            justify-item: centre
+            gap:20px;
+            padding:20px;
+            background: white;
+        }
+        input[type="email"] , input[type="submit"]{
+            
+          padding: 10px;
+          margin-top: 10px; 
+          outline:none;
+        }
+        p{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return validateForm()" novalidate class="box" method="post">
+        <p>reset your password here!</p>
+ <input type="email" id="email" placeholder="enter your registered email" required> 
+ <input type="submit" id="submit">
+ </form>
+ <script>
+     function validateForm(){
+         const email= document.getElementById("email").value.trim();
+         if(email===""){
+         alert('please enter your registered email');   
+         }
+         return true;
+     }
+ </script>
+</body>
+</html>
