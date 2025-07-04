@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title>harooniu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: borderbox;
+        }
+        body {
+            text-align:center;
+            background-color: #f0f8ff;
+            display:flex;
+            justify-item:center;
+        }
+        
+        /* flexible box*/
+        .box{
+            display:flex;
+            flex-direction: column;
+            justify-item:center;
+            background: white;
+            gap: 20px;
+            width: 300px;
+            padding:40px;
+            box-shadow: 0 0 10px(0,0,0, 0.1);
+            border-radius: 5vh;
+        }
+        
+        
+                 /* input */
+                 
+        input[type="email"] , input[type="password"]{
+            padding: 10px;
+            outline: none;
+            display:flex;
+            gap:20px;
+            justify-item: center;
+            margin: 10px;
+            border-radius: 10vh;
+            margin-left:20px ;
+            backdrop-filte:blur(10px);
+        }
+        
+        button{
+            margin-top:10px ;
+            padding: 10px;
+            margin-left:25px;
+            margin-right:65px ;
+            border-radius: 10vh;
+            padding-left: 75px;
+            padding-right:75px;
+            background: #00abff;
+        }
+        
+        
+        input[type="checkbox"]{
+            margin-top: 10px;
+        }
+        a:hover{
+            
+            color: tomato;
+            opacity: 0.5s;
+        }
+        
+        hr{
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+   <section class="box">
+       <!----my form---->
+       <form onsubmit="return validateForm() novalidated">
+                  <!----input1---->
+           <input type="email" id="email" placeholder="input your email/phone"required>
+                 <!----- input2----->
+           <input type="password" id="password" placeholder="input your password" required>
+              <!------buttpasswordon------>
+              <button id="submit">submit</button>
+              <br>
+                <!-- another input-->
+             <input type="checkbox" id="checkbox"check>
+             <label>
+             <a href="term.html">agree terms and conditions</a>
+             <br>
+             </label>
+             </input>
+             <!-- password reset-->
+             <a href="#">forgot password</a>
+              <!-- horizontal line-->
+             <hr>or
+                     <!-- sing up -->
+             <p>don't have an account yet</p>
+             <br>
+             <a href="#">sing up</a>
+             
+             </section>
+       </form>
+    
+</body>
+</html>
