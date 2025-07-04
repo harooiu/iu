@@ -16,6 +16,7 @@
     font-family: sans-serif;
     text-align:center;
     align-content:center;
+  margin-right:25px;
 }
 h1{
    animation: mymove 1s ease-in;
@@ -47,10 +48,12 @@ nav li{
     }
 .image-gallery{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    justify-item: center;
     gap: 50px;
-    box-shadow: 8px 8px 8px black;    
+    box-shadow: 8px 8px 8px black;
+    margin-left:25px;
+    margin-right:25px;
 }
 img{
     width: 100%;
@@ -66,28 +69,8 @@ img{
     100%{
         transform: translateX(100px);
     }
-}
-fieldset{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    background-image: url("fried-liver-waffles-with-onions-and-herbs-video.jpg");    
-}
-    fieldset input{
-        display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-        border: 2px solid black;
-        border-radius: 10vh;
-        outline: none;
-        margin-left: 20%;
-    }
-   input[type="submit"]{
-        margin-top: 10px;
-       padding:10px 80px;
-    }
+
+   
     video{
      margin: 35px;
      padding-top: 20px!
