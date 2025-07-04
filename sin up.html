@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harooniu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        body {
+            display:flex;
+            justify-content:center;
+            background: #f0f8ff;
+            margin-top:60px;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            justify-item: center;
+            background: white;
+            gap:20px;
+            width: 300px;
+            padding: 40px;
+            box-shadow: 0 0 0 8px(0,0,0, 0.1);
+            border-radius: 2vh;
+            margin-left:5px;
+        }
+        input[type="name"],input[type="email"],input[type="password"]{
+     padding: 10px;
+     outline: none;
+     background: ;
+     margin-top:10px ;
+        }
+    input[type="submit"]{
+        padding: 10px;
+        margin-top:10px;
+        margin-left:30px;
+        margin-right:40px;
+        padding-left:50px;
+        padding-right:50px;
+        background: #00c0ff;
+    }    
+    </style>
+</head>
+<body>
+      <!---------- my form----------->
+      <section class="box">
+    <form onsubmit="return validateForm()" novalidate>
+        <!-- form input -->
+    <label>
+        first name:
+    <input type="name" id="first_name" placeholder="enter your name" required>
+    </label>
+    <label>
+        middle name:
+    <input type="name" id="middle_name" placeholder="enter your middle name" required>
+    </label>
+    <label>
+        last name:
+    <input type="name" id="last_name" placeholder="your last name is optional" required>
+    </label>
+    <label>
+        email:
+    <input type="email" id="email" placeholder="enter your email" required>
+    </label>
+    <label>
+        create password:
+    <input type="password" id="password" placeholder="set your password" required>
+    </label>
+      <label>
+        confirm your password:
+    <input type="password" id="confirm_password" placeholder="confirm your password" required>         
+    <input type="submit" id="submit">
+    </section>
+    </form>
+    <script>
+       function validateForm() {
+         const  first_name = document.getElementById("first_name").value.trim();
+         const  middle_tname = document.getElementById("middle_name").value;
+         const  last_tname = document.getElementById("last_name").value;
+         const  email = document.getElementById("email").value.trim();
+         const  password = document.getElementById("password").value;
+                  const  confirm_password = document.getElementById("confirm_password").value;
+         
+         if(first_name===""||middle_name===""||email===""||password===""||confirm_password==="") {
+             alert("please fill the required field");
+             return false;
+         }
+         if(password!==confirm_password) {
+             alert("password not match");
+             return false;
+         }
+         alert("submitted successfully");
+         return true;
+       } 
+    </script>
+</body>
+</html>
